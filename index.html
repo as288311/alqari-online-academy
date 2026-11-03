@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b563e">
+<meta name="description" content="القریش اکیڈمی — آن لائن ناظرہ اور حفظ قرآن مجید کی تعلیم">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon-192.png">
+<title>القریش اکیڈمی | Al-Quraish Online Quran Academy</title>
+<style>
+:root{--g:#0b563e;--d:#073b2b;--gold:#d7ad4d;--cream:#fffdf6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#f4f7f3;color:#18352a;font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+header{background:linear-gradient(140deg,var(--d),var(--g));color:#fff;padding:12px 18px;border-bottom:4px solid var(--gold);position:sticky;top:0;z-index:5}
+.nav{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:bold;color:#f5d98e;font-size:20px}.nav a{color:white;text-decoration:none;margin-inline:7px;font-size:14px}
+main{max-width:900px;margin:22px auto;padding:0 14px}
+.hero,.card{background:white;border:1px solid #e2e9e1;border-radius:20px;box-shadow:0 6px 22px #123b2410}
+.hero{padding:22px;text-align:center}.hero img{width:min(100%,340px);height:auto;object-fit:contain}
+h1{color:var(--g);font-size:30px;margin:8px 0 0}.english{direction:ltr;font-family:Georgia,serif;letter-spacing:.5px}
+.tag{color:#53695d;margin:5px 0 15px}.btn{display:inline-block;background:var(--g);color:white;text-decoration:none;padding:11px 20px;border-radius:12px;font-weight:bold;border:0;cursor:pointer;font:inherit}
+.btn.gold{background:#b88927;color:#fff}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}
+.card{padding:18px}.card h2{margin:0 0 10px;color:var(--g);font-size:21px}
+.course{background:#f7faf5;border:1px solid #e3eadf;border-radius:13px;padding:13px;margin:8px 0}
+.fees{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fee{background:#fff9e9;border:1px solid #ead8a9;border-radius:13px;padding:13px;text-align:center}.fee b{display:block;color:var(--g);font-size:21px}
+label{display:block;font-weight:bold;margin:12px 0 4px}input,select{width:100%;padding:12px;border:1px solid #cbd8cf;border-radius:10px;font:inherit;background:white}
+form button{width:100%;margin-top:17px}.small{font-size:13px;color:#63746a}.center{text-align:center}
+footer{text-align:center;color:#617268;padding:22px 12px;font-size:13px}
+#install{display:none;margin-top:10px}
+@media(max-width:620px){.nav nav{display:none}.cards{grid-template-columns:1fr}h1{font-size:25px}.fees{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<header><div class="nav">
+ <div class="brand">القریش اکیڈمی</div>
+ <nav><a href="#home">ہوم</a><a href="#courses">کورسز</a><a href="#fees">فیس</a><a href="#admission">داخلہ</a></nav>
+ <a class="btn" href="https://wa.me/923207638805" target="_blank" rel="noopener">رابطہ</a>
+</div></header>
+<main>
+<section class="hero" id="home">
+ <img src="assets/academy-logo.png" alt="Al-Quraish Online Quran Academy logo">
+ <h1>القریش اکیڈمی</h1><div class="english">AL-QURAISH ONLINE QURAN ACADEMY</div>
+ <p class="tag">آن لائن ناظرہ و حفظِ قرآن مجید</p>
+ <p><b>استاد: محمد اویس شاہ نقشبندی</b></p>
+ <a class="btn gold" href="#admission">آن لائن داخلہ فارم</a>
+ <br><button class="btn" id="install">موبائل میں ایپ انسٹال کریں</button>
+</section>
+<div class="cards">
+<section class="card" id="courses"><h2>ہمارے کورسز</h2>
+ <div class="course"><b>ناظرہ قرآن مجید</b><br><span class="small">قرآن مجید پڑھنے کی تعلیم</span></div>
+ <div class="course"><b>حفظ قرآن مجید</b><br><span class="small">قرآن مجید حفظ کرنے کی تعلیم</span></div>
+</section>
+<section class="card" id="fees"><h2>ماہانہ فیس</h2>
+ <div class="fees"><div class="fee">پاکستان<b>3000 روپے</b></div><div class="fee">بیرونِ ملک<b>$35 USD</b></div></div>
+ <p class="small">کلاس کے اوقات داخلے کے بعد باہمی مشورے سے طے کیے جائیں گے۔</p>
+</section></div>
+<section class="card" id="admission">
+<h2>آن لائن داخلہ فارم</h2>
+<p class="small">براہِ کرم طالب علم کے والدین یا سرپرست یہ فارم پُر کریں۔ جمع کرنے پر واٹس ایپ میں درخواست تیار ہوگی۔</p>
+<form id="form">
+<label for="student">طالب علم کا نام</label><input id="student" required maxlength="80" placeholder="پورا نام">
+<label for="age">عمر</label><input id="age" required type="number" min="3" max="100" placeholder="عمر">
+<label for="country">ملک</label><input id="country" required value="پاکستان" maxlength="60">
+<label for="course">کورس منتخب کریں</label><select id="course"><option>ناظرہ قرآن</option><option>حفظ قرآن</option></select>
+<label for="guardian">والدین / سرپرست کا واٹس ایپ نمبر</label><input id="guardian" required type="tel" maxlength="25" placeholder="ملکی کوڈ سمیت نمبر">
+<label for="time">کلاس کا پسندیدہ وقت</label><input id="time" required maxlength="60" placeholder="مثلاً شام 5 بجے (پاکستانی وقت)">
+<button class="btn" type="submit">واٹس ایپ پر درخواست بھیجیں</button>
+</form>
+<p class="small">آپ کی فراہم کردہ معلومات اس ویب صفحے میں کسی آن لائن ڈیٹابیس پر محفوظ نہیں ہوتیں؛ درخواست واٹس ایپ میں کھلتی ہے۔</p>
+</section>
+<section class="card center" style="margin-top:15px"><h2>رابطہ</h2><div class="english">WhatsApp: +92 320 7638805</div><a class="btn" href="https://wa.me/923207638805" target="_blank" rel="noopener">واٹس ایپ پر رابطہ کریں</a></section>
+</main>
+<footer>© Al-Quraish Online Quran Academy</footer>
+<script>
+const val=id=>document.getElementById(id).value.trim();
+document.getElementById('form').addEventListener('submit',e=>{
+ e.preventDefault();
+ const country=val('country');
+ const fee=country==='پاکستان'?'3000 پاکستانی روپے':'35 امریکی ڈالر';
+ const message=['القریش اکیڈمی — نئی داخلہ درخواست','طالب علم: '+val('student'),'عمر: '+val('age'),'ملک: '+country,'کورس: '+val('course'),'سرپرست واٹس ایپ: '+val('guardian'),'پسندیدہ وقت: '+val('time'),'ماہانہ فیس: '+fee].join('\n');
+ window.open('https://wa.me/923207638805?text='+encodeURIComponent(message),'_blank','noopener');
+});
+let installPrompt;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;const b=document.getElementById('install');b.style.display='inline-block';b.onclick=async()=>{installPrompt.prompt();installPrompt=null;b.style.display='none'};});
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+</script></body></html>
